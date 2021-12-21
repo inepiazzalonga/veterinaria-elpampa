@@ -50,7 +50,7 @@ main {
     margin-left: 0.5em;
 }
 
-.titulo{
+.titulo {
     text-align: center;
     width: 100%;
     font-family: 'Poppins', sans-serif;
@@ -98,6 +98,7 @@ main {
         "servicios"
         "contacto";
     grid-gap: 0.5em;
+    transform: rotate(360deg);
 }
 
 .galeria a {
@@ -111,6 +112,13 @@ main {
 .galeria a:hover {
     transform: scale(1.05);
     opacity: 1;
+    animation-duration: 1s;
+    transform: rotate(360deg);
+    border-radius: 169px 169px 169px 169px;
+    -moz-border-radius: 169px 169px 169px 169px;
+    -webkit-border-radius: 169px 169px 169px 169px;
+    border: 0px solid #000000;
+
 }
 
 .nosotros {
@@ -176,12 +184,12 @@ main {
     grid-template-columns: auto;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
-       "walter"
-       "patricio"
-       "ariel";
+        "walter"
+        "patricio"
+        "ariel";
 }
 
-.nombre{
+.nombre {
     width: 90%;
     height: auto;
     background-color: rgb(245, 241, 208);
@@ -218,15 +226,15 @@ main {
     margin-bottom: 2em;
 }
 
-.walter{
+.walter {
     grid-area: walter;
 }
 
-.patricio{
+.patricio {
     grid-area: patricio;
 }
 
-.ariel{
+.ariel {
     grid-area: ariel;
 }
 
@@ -249,15 +257,15 @@ main {
     margin-bottom: 2em;
 }
 
-.sectionServicios{
+.sectionServicios {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "sanidad"
-    "reproduccion"
-    "analisis"
-    "venta";
+    grid-template-areas:
+        "sanidad"
+        "reproduccion"
+        "analisis"
+        "venta";
 }
 
 .serv__foto {
@@ -267,7 +275,7 @@ main {
     margin-bottom: 1em;
 }
 
-.serv__titulo{
+.serv__titulo {
     background-color: rgb(245, 241, 208);
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
@@ -276,7 +284,7 @@ main {
     padding: 5px;
 }
 
-.serv__info{
+.serv__info {
     background-color: rgb(245, 241, 208);
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
@@ -287,39 +295,39 @@ main {
     margin-bottom: 2em;
 }
 
-.sanidad{
+.sanidad {
     grid-area: sanidad;
 }
 
-.reproduccion{
+.reproduccion {
     grid-area: reproduccion;
 }
 
-.analisis{
+.analisis {
     grid-area: analisis;
 }
 
-.venta{
+.venta {
     grid-area: venta;
 }
 
-.contacto__page{
+.contacto__page {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "mapa"
-    "formulario";
+    grid-template-areas:
+        "mapa"
+        "formulario";
 }
 
-.mapa{
+.mapa {
     width: 20em;
     height: 20em;
     margin-left: 2em;
     grid-area: mapa;
 }
 
-.formulario{
+.formulario {
     width: 95%;
     height: auto;
     margin-left: 3em;
@@ -328,25 +336,25 @@ main {
     grid-area: formulario;
 }
 
-.input{
+.input {
     width: 60%;
     margin-left: 1em;
 }
 
-.formulario__consulta{
+.formulario__consulta {
     width: 80%;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
 }
 
-.enviar{
+.enviar {
     width: 80%;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
 }
 
-@media screen and (min-width: 600px){
-    main{
+@media screen and (min-width: 600px) {
+    main {
         width: 100%;
         height: auto;
     }
@@ -363,7 +371,7 @@ main {
         margin-top: 5px;
     }
 
-    .presentacion p{
+    .presentacion p {
         width: 97%;
         height: auto;
     }
@@ -381,33 +389,33 @@ main {
         grid-gap: 0.2em;
         margin-bottom: 1em;
     }
-    
+
     .galeria a {
         height: 16em;
         width: 16em;
         margin-top: 1em;
         margin-left: 1.3em;
     }
-    
+
     .galeria a:hover {
         transform: scale(1.05);
         opacity: 1;
     }
-    
+
     .nosotros {
         background-image: url(fotos/patopedrocard.png);
         background-size: cover;
         opacity: 0.7;
         grid-area: nosotros;
     }
-    
+
     .servicios {
         background-image: url(fotos/vacuna.jpg);
         background-size: cover;
         opacity: 0.7;
         grid-area: servicios;
     }
-    
+
     .contacto {
         background-image: url(fotos/vidriera.png);
         background-size: cover;
@@ -420,7 +428,7 @@ main {
         height: 100%;
         background-color: whitesmoke;
     }
-    
+
     .footer div {
         width: 100%;
         color: rgb(170, 170, 170);
@@ -428,18 +436,18 @@ main {
         font-size: 13px;
         margin-bottom: 1em;
     }
-    
+
     .footer p {
         margin-left: 1em;
     }
-    
+
     .icono {
         width: 2.5em;
         height: 2.5em;
         margin-top: 1em;
         margin-left: 2em;
     }
-        
+
     .aboutUs {
         width: 100%;
         height: 100%;
@@ -447,26 +455,26 @@ main {
         grid-template-columns: auto;
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
-           "walter"
-           "patricio"
-           "ariel";
+            "walter"
+            "patricio"
+            "ariel";
     }
-    
-    .nombre{
+
+    .nombre {
         width: 90%;
         height: auto;
         font-size: 20px;
         margin-left: 0.8em;
         padding: 5px;
     }
-    
+
     .foto {
         height: auto;
         width: 90%;
         padding: 15px;
         margin-left: 1em;
     }
-    
+
     .info {
         width: 90%;
         height: auto;
@@ -475,20 +483,20 @@ main {
         padding: 10px;
         margin-bottom: 2em;
     }
-    
-    .walter{
+
+    .walter {
         grid-area: walter;
     }
-    
-    .patricio{
+
+    .patricio {
         grid-area: patricio;
     }
-    
-    .ariel{
+
+    .ariel {
         grid-area: ariel;
     }
-    
-    .asesoramiento{
+
+    .asesoramiento {
         display: flex;
         flex-direction: column;
     }
@@ -499,7 +507,7 @@ main {
         margin-left: 1em;
         margin-top: 1em;
     }
-    
+
     .asesoramiento__info {
         width: 96%;
         height: auto;
@@ -510,32 +518,32 @@ main {
         margin-bottom: 3em;
         margin-top: 1em;
     }
-    
-    .sectionServicios{
+
+    .sectionServicios {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: 
-        "sanidad reproduccion"
-        "analisis venta";
+        grid-template-areas:
+            "sanidad reproduccion"
+            "analisis venta";
     }
-    
+
     .serv__foto {
         width: 80%;
         height: auto;
         margin-left: 2em;
         margin-bottom: 1em;
     }
-    
-    .serv__titulo{
+
+    .serv__titulo {
         width: 80%;
         height: auto;
         font-size: 20px;
         margin-left: 2em;
         padding: 5px;
     }
-    
-    .serv__info{
+
+    .serv__info {
         width: 80%;
         height: auto;
         font-size: 15px;
@@ -543,71 +551,71 @@ main {
         padding: 5px;
         margin-bottom: 2em;
     }
-    
-    .sanidad{
+
+    .sanidad {
         grid-area: sanidad;
     }
-    
-    .reproduccion{
+
+    .reproduccion {
         grid-area: reproduccion;
     }
-    
-    .analisis{
+
+    .analisis {
         grid-area: analisis;
     }
-    
-    .venta{
+
+    .venta {
         grid-area: venta;
     }
 
-    .contacto__page{
+    .contacto__page {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "mapa"
-        "formulario";
+        grid-template-areas:
+            "mapa"
+            "formulario";
     }
-    
-    .mapa{
+
+    .mapa {
         width: 90%;
         height: 20em;
         margin-left: 2em;
         grid-area: mapa;
     }
-    
-    .formulario{
+
+    .formulario {
         width: 98%;
         height: auto;
         margin-left: 5em;
         grid-area: formulario;
     }
-    
+
 }
 
-@media screen and (min-width:920px) and (max-width: 1600px){
+@media screen and (min-width:920px) {
     .logo {
         width: 180px;
         height: 180px;
         margin-left: 400px;
     }
-    
+
     ul {
         font-size: 20px;
     }
-    
+
     ul li {
         display: inline-block;
         padding: 5px;
         margin-left: 5px;
     }
-    
+
     main {
         width: 100%;
         height: 100%;
         margin-left: 0.5em;
     }
-    
+
     .presentacion {
         width: 100%;
         height: auto;
@@ -616,20 +624,20 @@ main {
         flex-direction: row;
         padding: 10px;
     }
-    
+
     .presentacion img {
         width: 50%;
         height: 100%;
         margin-top: 30px;
     }
-    
+
     .presentacion p {
         width: 48%;
         height: 100%;
         padding: 15px;
         margin-top: 60px;
     }
-    
+
     .galeria {
         height: 100%;
         width: 100%;
@@ -641,62 +649,62 @@ main {
             "nosotros servicios contacto";
         grid-gap: 0.5em;
     }
-    
+
     .galeria a {
         height: 16em;
         width: 16em;
         margin-top: 1em;
         margin-left: 1.3em;
     }
-    
+
     .galeria a:hover {
         transform: scale(1.05);
         opacity: 1;
     }
-    
+
     .nosotros {
         background-image: url(fotos/patopedrocard.png);
         background-size: cover;
         opacity: 0.7;
         grid-area: nosotros;
     }
-    
+
     .servicios {
         background-image: url(fotos/vacuna.jpg);
         background-size: cover;
         opacity: 0.7;
         grid-area: servicios;
     }
-    
+
     .contacto {
         background-image: url(fotos/vidriera.png);
         background-size: cover;
         opacity: 0.7;
         grid-area: contacto;
     }
-    
+
     .footer {
         width: 100%;
         height: 100%;
     }
-    
+
     .footer div {
         width: 100%;
         font-size: 12px;
         margin-bottom: 1em;
     }
-    
+
     .footer p {
         margin-left: 1em;
     }
-    
+
     .icono {
         width: 2.5em;
         height: 2.5em;
         margin-top: 1em;
         margin-left: 2em;
     }
-    
+
     .aboutUs {
         width: 100%;
         height: 100%;
@@ -704,24 +712,24 @@ main {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
         grid-template-areas:
-           "walter patricio ariel";
+            "walter patricio ariel";
     }
-    
-    .nombre{
+
+    .nombre {
         width: 90%;
         height: auto;
         font-size: 20px;
         margin-left: 0.8em;
         padding: 5px;
     }
-    
+
     .foto {
         height: auto;
         width: 90%;
         padding: 15px;
         margin-left: 1em;
     }
-    
+
     .info {
         width: 90%;
         height: auto;
@@ -730,20 +738,20 @@ main {
         padding: 10px;
         margin-bottom: 2em;
     }
-    
-    .walter{
+
+    .walter {
         grid-area: walter;
     }
-    
-    .patricio{
+
+    .patricio {
         grid-area: patricio;
     }
-    
-    .ariel{
+
+    .ariel {
         grid-area: ariel;
     }
-    
-    .asesoramiento{
+
+    .asesoramiento {
         display: flex;
         flex-direction: row;
     }
@@ -754,7 +762,7 @@ main {
         margin-left: 1em;
         margin-top: 1em;
     }
-    
+
     .asesoramiento__info {
         width: 50%;
         height: auto;
@@ -765,32 +773,32 @@ main {
         margin-bottom: 3em;
         margin-top: 1em;
     }
-    
-    .sectionServicios{
+
+    .sectionServicios {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: 
-        "sanidad reproduccion"
-        "analisis venta";
+        grid-template-areas:
+            "sanidad reproduccion"
+            "analisis venta";
     }
-    
+
     .serv__foto {
         width: 80%;
         height: auto;
         margin-left: 2em;
         margin-bottom: 1em;
     }
-    
-    .serv__titulo{
+
+    .serv__titulo {
         width: 80%;
         height: auto;
         font-size: 20px;
         margin-left: 2em;
         padding: 5px;
     }
-    
-    .serv__info{
+
+    .serv__info {
         width: 80%;
         height: auto;
         font-size: 15px;
@@ -798,35 +806,35 @@ main {
         padding: 5px;
         margin-bottom: 2em;
     }
-    
-    .sanidad{
+
+    .sanidad {
         grid-area: sanidad;
     }
-    
-    .reproduccion{
+
+    .reproduccion {
         grid-area: reproduccion;
     }
-    
-    .analisis{
+
+    .analisis {
         grid-area: analisis;
     }
-    
-    .venta{
+
+    .venta {
         grid-area: venta;
     }
 
-    .contacto__page{
+    .contacto__page {
         display: flex;
-    flex-direction: row;
+        flex-direction: row;
     }
-    
-    .mapa{
+
+    .mapa {
         width: 50%;
         margin-left: 2em;
         grid-area: mapa;
     }
-    
-    .formulario{
+
+    .formulario {
         width: 50%;
         margin-left: 5em;
         grid-area: formulario;
