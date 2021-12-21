@@ -1,0 +1,834 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    justify-content: space-evenly;
+}
+
+ul li {
+    display: inline-block;
+    justify-content: space-evenly;
+    padding: 5px;
+    color: rgb(17, 25, 56);
+    font-variant: small-caps;
+    margin-left: 5px;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+main {
+    width: 95%;
+    height: 100%;
+    margin-left: 0.5em;
+}
+
+.titulo{
+    text-align: center;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: grey;
+    font-variant: small-caps;
+    font-size: 20px;
+    margin-bottom: 2em;
+}
+
+.presentacion {
+    width: 100%;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    background-color: rgb(245, 241, 208);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.presentacion img {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+}
+
+.presentacion p {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.galeria {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(245, 241, 208);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "nosotros"
+        "servicios"
+        "contacto";
+    grid-gap: 0.5em;
+}
+
+.galeria a {
+    height: 18em;
+    width: 18em;
+    margin-top: 1em;
+    margin-left: 1.3em;
+    color: grey;
+}
+
+.galeria a:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.nosotros {
+    background-image: url(fotos/patopedrocard.png);
+    background-size: cover;
+    opacity: 0.7;
+    grid-area: nosotros;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+
+.servicios {
+    background-image: url(fotos/vacuna.jpg);
+    background-size: cover;
+    opacity: 0.7;
+    grid-area: servicios;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+
+.contacto {
+    background-image: url(fotos/vidriera.png);
+    background-size: cover;
+    opacity: 0.7;
+    grid-area: contacto;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.footer div {
+    width: 100%;
+    color: rgb(170, 170, 170);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    margin-bottom: 1em;
+}
+
+.footer p {
+    margin-left: 1em;
+}
+
+.icono {
+    width: 2em;
+    height: 2em;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+}
+
+.aboutUs {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+       "walter"
+       "patricio"
+       "ariel";
+}
+
+.nombre{
+    width: 90%;
+    height: auto;
+    background-color: rgb(245, 241, 208);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: grey;
+    margin-left: 0.8em;
+    padding: 5px;
+}
+
+.foto {
+    height: auto;
+    width: 90%;
+    padding: 15px;
+    margin-left: 1em;
+}
+
+.foto__ariel {
+    height: auto;
+    width: 90%;
+    margin-left: 1em;
+}
+
+.info {
+    width: 90%;
+    height: auto;
+    background-color: rgb(245, 241, 208);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: grey;
+    margin-left: 1em;
+    padding: 5px;
+    text-align: justify;
+    margin-bottom: 2em;
+}
+
+.walter{
+    grid-area: walter;
+}
+
+.patricio{
+    grid-area: patricio;
+}
+
+.ariel{
+    grid-area: ariel;
+}
+
+.asesoramiento__img {
+    width: 95%;
+    height: auto;
+    margin-left: 1em;
+}
+
+.asesoramiento__info {
+    width: 95%;
+    height: auto;
+    background-color: rgb(245, 241, 208);
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+    font-size: 15px;
+    text-align: justify;
+    padding: 10px;
+    margin-left: 1em;
+    margin-bottom: 2em;
+}
+
+.sectionServicios{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "sanidad"
+    "reproduccion"
+    "analisis"
+    "venta";
+}
+
+.serv__foto {
+    width: 92%;
+    height: auto;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.serv__titulo{
+    background-color: rgb(245, 241, 208);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: grey;
+    margin-left: 0.8em;
+    padding: 5px;
+}
+
+.serv__info{
+    background-color: rgb(245, 241, 208);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: grey;
+    margin-left: 1em;
+    padding: 5px;
+    text-align: justify;
+    margin-bottom: 2em;
+}
+
+.sanidad{
+    grid-area: sanidad;
+}
+
+.reproduccion{
+    grid-area: reproduccion;
+}
+
+.analisis{
+    grid-area: analisis;
+}
+
+.venta{
+    grid-area: venta;
+}
+
+.contacto__page{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "mapa"
+    "formulario";
+}
+
+.mapa{
+    width: 20em;
+    height: 20em;
+    margin-left: 2em;
+    grid-area: mapa;
+}
+
+.formulario{
+    width: 95%;
+    height: auto;
+    margin-left: 3em;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    grid-area: formulario;
+}
+
+.input{
+    width: 60%;
+    margin-left: 1em;
+}
+
+.formulario__consulta{
+    width: 80%;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.enviar{
+    width: 80%;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (min-width: 600px){
+    main{
+        width: 100%;
+        height: auto;
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+        margin-left: 220px;
+    }
+
+    .presentacion img {
+        width: 97%;
+        height: auto;
+        margin-top: 5px;
+    }
+
+    .presentacion p{
+        width: 97%;
+        height: auto;
+    }
+
+    .galeria {
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "nosotros servicios"
+            "contacto x";
+        grid-gap: 0.2em;
+        margin-bottom: 1em;
+    }
+    
+    .galeria a {
+        height: 16em;
+        width: 16em;
+        margin-top: 1em;
+        margin-left: 1.3em;
+    }
+    
+    .galeria a:hover {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    
+    .nosotros {
+        background-image: url(fotos/patopedrocard.png);
+        background-size: cover;
+        opacity: 0.7;
+        grid-area: nosotros;
+    }
+    
+    .servicios {
+        background-image: url(fotos/vacuna.jpg);
+        background-size: cover;
+        opacity: 0.7;
+        grid-area: servicios;
+    }
+    
+    .contacto {
+        background-image: url(fotos/vidriera.png);
+        background-size: cover;
+        opacity: 0.7;
+        grid-area: contacto;
+    }
+
+    .footer {
+        width: 100%;
+        height: 100%;
+        background-color: whitesmoke;
+    }
+    
+    .footer div {
+        width: 100%;
+        color: rgb(170, 170, 170);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        margin-bottom: 1em;
+    }
+    
+    .footer p {
+        margin-left: 1em;
+    }
+    
+    .icono {
+        width: 2.5em;
+        height: 2.5em;
+        margin-top: 1em;
+        margin-left: 2em;
+    }
+        
+    .aboutUs {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+           "walter"
+           "patricio"
+           "ariel";
+    }
+    
+    .nombre{
+        width: 90%;
+        height: auto;
+        font-size: 20px;
+        margin-left: 0.8em;
+        padding: 5px;
+    }
+    
+    .foto {
+        height: auto;
+        width: 90%;
+        padding: 15px;
+        margin-left: 1em;
+    }
+    
+    .info {
+        width: 90%;
+        height: auto;
+        font-size: 15px;
+        margin-left: 1em;
+        padding: 10px;
+        margin-bottom: 2em;
+    }
+    
+    .walter{
+        grid-area: walter;
+    }
+    
+    .patricio{
+        grid-area: patricio;
+    }
+    
+    .ariel{
+        grid-area: ariel;
+    }
+    
+    .asesoramiento{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .asesoramiento__img {
+        width: 96%;
+        height: auto;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    
+    .asesoramiento__info {
+        width: 96%;
+        height: auto;
+        font-size: 14px;
+        text-align: justify;
+        padding: 10px;
+        margin-left: 1em;
+        margin-bottom: 3em;
+        margin-top: 1em;
+    }
+    
+    .sectionServicios{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "sanidad reproduccion"
+        "analisis venta";
+    }
+    
+    .serv__foto {
+        width: 80%;
+        height: auto;
+        margin-left: 2em;
+        margin-bottom: 1em;
+    }
+    
+    .serv__titulo{
+        width: 80%;
+        height: auto;
+        font-size: 20px;
+        margin-left: 2em;
+        padding: 5px;
+    }
+    
+    .serv__info{
+        width: 80%;
+        height: auto;
+        font-size: 15px;
+        margin-left: 2em;
+        padding: 5px;
+        margin-bottom: 2em;
+    }
+    
+    .sanidad{
+        grid-area: sanidad;
+    }
+    
+    .reproduccion{
+        grid-area: reproduccion;
+    }
+    
+    .analisis{
+        grid-area: analisis;
+    }
+    
+    .venta{
+        grid-area: venta;
+    }
+
+    .contacto__page{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "mapa"
+        "formulario";
+    }
+    
+    .mapa{
+        width: 90%;
+        height: 20em;
+        margin-left: 2em;
+        grid-area: mapa;
+    }
+    
+    .formulario{
+        width: 98%;
+        height: auto;
+        margin-left: 5em;
+        grid-area: formulario;
+    }
+    
+}
+
+@media screen and (min-width:920px) and (max-width: 1600px){
+    .logo {
+        width: 180px;
+        height: 180px;
+        margin-left: 400px;
+    }
+    
+    ul {
+        font-size: 20px;
+    }
+    
+    ul li {
+        display: inline-block;
+        padding: 5px;
+        margin-left: 5px;
+    }
+    
+    main {
+        width: 100%;
+        height: 100%;
+        margin-left: 0.5em;
+    }
+    
+    .presentacion {
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+    
+    .presentacion img {
+        width: 50%;
+        height: 100%;
+        margin-top: 30px;
+    }
+    
+    .presentacion p {
+        width: 48%;
+        height: 100%;
+        padding: 15px;
+        margin-top: 60px;
+    }
+    
+    .galeria {
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "nosotros servicios contacto";
+        grid-gap: 0.5em;
+    }
+    
+    .galeria a {
+        height: 16em;
+        width: 16em;
+        margin-top: 1em;
+        margin-left: 1.3em;
+    }
+    
+    .galeria a:hover {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    
+    .nosotros {
+        background-image: url(fotos/patopedrocard.png);
+        background-size: cover;
+        opacity: 0.7;
+        grid-area: nosotros;
+    }
+    
+    .servicios {
+        background-image: url(fotos/vacuna.jpg);
+        background-size: cover;
+        opacity: 0.7;
+        grid-area: servicios;
+    }
+    
+    .contacto {
+        background-image: url(fotos/vidriera.png);
+        background-size: cover;
+        opacity: 0.7;
+        grid-area: contacto;
+    }
+    
+    .footer {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .footer div {
+        width: 100%;
+        font-size: 12px;
+        margin-bottom: 1em;
+    }
+    
+    .footer p {
+        margin-left: 1em;
+    }
+    
+    .icono {
+        width: 2.5em;
+        height: 2.5em;
+        margin-top: 1em;
+        margin-left: 2em;
+    }
+    
+    .aboutUs {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+           "walter patricio ariel";
+    }
+    
+    .nombre{
+        width: 90%;
+        height: auto;
+        font-size: 20px;
+        margin-left: 0.8em;
+        padding: 5px;
+    }
+    
+    .foto {
+        height: auto;
+        width: 90%;
+        padding: 15px;
+        margin-left: 1em;
+    }
+    
+    .info {
+        width: 90%;
+        height: auto;
+        font-size: 15px;
+        margin-left: 1em;
+        padding: 10px;
+        margin-bottom: 2em;
+    }
+    
+    .walter{
+        grid-area: walter;
+    }
+    
+    .patricio{
+        grid-area: patricio;
+    }
+    
+    .ariel{
+        grid-area: ariel;
+    }
+    
+    .asesoramiento{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .asesoramiento__img {
+        width: 50%;
+        height: auto;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    
+    .asesoramiento__info {
+        width: 50%;
+        height: auto;
+        font-size: 15px;
+        text-align: justify;
+        padding: 10px;
+        margin-left: 1em;
+        margin-bottom: 3em;
+        margin-top: 1em;
+    }
+    
+    .sectionServicios{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "sanidad reproduccion"
+        "analisis venta";
+    }
+    
+    .serv__foto {
+        width: 80%;
+        height: auto;
+        margin-left: 2em;
+        margin-bottom: 1em;
+    }
+    
+    .serv__titulo{
+        width: 80%;
+        height: auto;
+        font-size: 20px;
+        margin-left: 2em;
+        padding: 5px;
+    }
+    
+    .serv__info{
+        width: 80%;
+        height: auto;
+        font-size: 15px;
+        margin-left: 2em;
+        padding: 5px;
+        margin-bottom: 2em;
+    }
+    
+    .sanidad{
+        grid-area: sanidad;
+    }
+    
+    .reproduccion{
+        grid-area: reproduccion;
+    }
+    
+    .analisis{
+        grid-area: analisis;
+    }
+    
+    .venta{
+        grid-area: venta;
+    }
+
+    .contacto__page{
+        display: flex;
+    flex-direction: row;
+    }
+    
+    .mapa{
+        width: 50%;
+        margin-left: 2em;
+        grid-area: mapa;
+    }
+    
+    .formulario{
+        width: 50%;
+        margin-left: 5em;
+        grid-area: formulario;
+    }
+}
